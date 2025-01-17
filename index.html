@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Traveling policy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -12,6 +25,11 @@
         <a class="header-logo" href="./index.html"
           ><span class="header-logo-svg">trip</span>страхование</a
         >
+        <button class="mob-btn-open js-open-menu" type="button">
+          <svg width="32" height="32">
+            <use href="./img/icons.svg#icon-btn-mob"></use>
+          </svg>
+        </button>
         <ul class="header-list">
           <li class="header-item">
             <a class="header-link" href="">Продукты</a>
@@ -22,10 +40,25 @@
           </li>
         </ul>
         <button class="header-btn" type="button">Скидки</button>
+        <div class="mob-menu js-menu-container">
+          <button class="mob-btn-close js-close-menu" type="button">X</button>
+          <ul class="mob-list">
+            <li class="mob-item">
+              <a class="mob-link header-link" href="">Продукты</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link header-link" href="">Отзывы</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link header-link" href="">Партнерам</a>
+            </li>
+          </ul>
+          <button class="mob-btn" type="button">Скидки</button>
+        </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Страхование путешественников</h1>
           <p class="hero-subtitle">Полис, который действительно работает</p>
@@ -54,8 +87,8 @@
             <button type="submit">Узнать стоимость</button>
           </form>
         </div>
-      </section>
-      <section class="benefits">
+      </section> -->
+      <!-- <section class="benefits">
         <div class="container">
           <h2>Benefits</h2>
           <ul class="benefits-list">
@@ -111,8 +144,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="policy">
+      </section> -->
+      <!-- <section class="policy">
         <div class="container">
           <h2 class="policy-title">Как купить полис?</h2>
           <ul class="policy-list">
@@ -132,8 +165,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="line">
+      </section> -->
+      <!-- <section class="line">
         <div class="line-wrap">
           <ul class="line-list">
             <li class="line-item">
@@ -178,8 +211,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="reviews">
+      </section> -->
+      <!-- <section class="reviews">
         <div class="container">
           <h2 class="reviews-title">Отзывы</h2>
           <ul class="reviews-list">
@@ -265,9 +298,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-info">
           <p class="footer-title">Информационный центр</p>
@@ -317,6 +350,13 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/mob-menu.js"></script>
   </body>
 </html>
