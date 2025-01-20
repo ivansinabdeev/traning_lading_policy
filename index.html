@@ -69,34 +69,50 @@
     </header>
     <main>
       <section class="hero">
-        <!--  <div class="container">
+        <div class="container">
           <h1 class="hero-title">Страхование путешественников</h1>
           <p class="hero-subtitle">Полис, который действительно работает</p>
           <form class="hero-form">
             <div class="hero-form-wrap">
               <label class="hero-form-search"
-                ><input type="text" class="hero-form-input"
+                ><input
+                  type="text"
+                  class="hero-form-input"
+                  placeholder="Куда едем?"
               /></label>
-              <label class="hero-form-start"
-                ><input type="date" name="start" class="hero-form-start"
-              /></label>
-              <label class="hero-form-end"
-                ><input type="date" name="end" class="hero-form-end"
-              /></label>
-              <label class="hero-form-choise"
-                ><input type="date" name="choise" class="hero-form-choise" />
-                <datalist class="hero-form-choise-list">
+              <div class="hero-input-wrap">
+                <label class="hero-form-start">
+                  <input
+                    type="date"
+                    name="start"
+                    value="2025-03-05"
+                    class="hero-form-date"
+                /></label>
+                <label class="hero-form-end">
+                  <input
+                    type="date"
+                    name="end"
+                    value="2025-03-06"
+                    class="hero-form-date"
+                /></label>
+              </div>
+              <label for="dropdown" class="hero-form-choise">
+                <select
+                  id="dropdown"
+                  name="quantity_mans"
+                  class="hero-form-choise-list"
+                >
                   <option value="1_man">1 человек</option>
-                  <option value="2_man">2 человек</option>
-                  <option value="3_man">3 человек</option>
-                  <option value="4_man">4 человек</option>
+                  <option value="2_man">2 человека</option>
+                  <option value="3_man">3 человека</option>
+                  <option value="4_man">4 человека</option>
                   <option value="5_man">5 человек</option>
-                </datalist>
+                </select>
               </label>
             </div>
-            <button type="submit">Узнать стоимость</button>
+            <button class="hero-btn" type="submit">Узнать стоимость</button>
           </form>
-        </div> -->
+        </div>
       </section>
       <!-- <section class="benefits">
         <div class="container">
