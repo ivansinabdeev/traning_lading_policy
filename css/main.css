@@ -47,6 +47,19 @@ ol {
 a {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .container {
   min-width: 320px;
@@ -266,6 +279,40 @@ a {
     line-height: 0.91;
     color: var(--white-cl);
   }
+
+  /* ------------------------ BENEFITS ------------------------------ */
+
+  .benefits {
+    padding: 32px 0;
+  }
+
+  .benefits-list {
+  }
+  .benefits-item {
+  }
+  .benefits-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.91;
+
+    margin-bottom: 20px;
+  }
+  .benefits-text {
+    font-weight: 300;
+
+    margin-bottom: 8px;
+  }
+  .hidden-text-mob {
+    display: none;
+  }
+  .open-text {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--accent-cl);
+  }
+  .benefits-img {
+    margin: 0 auto;
+  }
 }
 /* ==================------------ TABLET -----------=================== */
 @media screen and (min-width: 768px) {
@@ -364,14 +411,122 @@ a {
     display: none;
   }
 
-  /* ----------------------------- HERO -------------------------------- */
+  /* ---------------------- HERO ------------------------- */
   .hero {
     background-image: url(../img/bg_img_main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     max-width: 100%;
-    height: 500px;
+    height: 438px;
+    padding-top: 150px;
+    padding-bottom: 74px;
+  }
+  .hero-title {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--white-cl);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .hero-subtitle {
+    color: var(--white-cl);
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  .hero-form-wrap {
+    display: flex;
+    gap: 24px;
+    background-color: var(--white-cl);
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+  }
+  .hero-form-search,
+  .hero-form-choise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-form-input {
+    border: none;
+    width: 100%;
+  }
+  .hero-form-input::placeholder {
+    font-size: 16px;
+    line-height: 0.91;
+    color: var(--txt-cl);
+    padding-left: 8px;
+  }
+  .hero-input-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-form-search::after,
+  .hero-input-wrap::after,
+  .hero-form-start::after {
+    content: "";
+    position: relative;
+    width: 0.5px;
+    height: 39px;
+    background-color: var(--accent-cl);
+  }
+  .hero-form-date {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--txt-cl);
+
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-form-start {
+    display: flex;
+  }
+  .hero-form-start::after {
+    display: flex;
+  }
+  .hero-form-end {
+    padding-left: 20px;
+  }
+  .hero-form-date::-webkit-calendar-picker-indicator {
+    order: -1;
+    margin-right: 12px;
+    margin-bottom: 2px;
+    color: transparent;
+    background: none;
+    background-image: url(../img/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+  }
+
+  .hero-form-choise-list {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--txt-cl);
+
+    width: 100%;
+    height: 28px;
+    border: none;
+  }
+  .hero-btn {
+    border-radius: 5px;
+    padding: 12px 28px;
+    min-width: 192px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--accent-cl);
+
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 0.91;
+    color: var(--white-cl);
   }
 }
 
@@ -397,11 +552,46 @@ a {
 
   /* ----------------------------- HERO -------------------------------- */
   .hero {
-    background-image: url(../img/bg_img_main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    height: 500px;
+    height: 1080px;
+    padding-top: 316px;
+    padding-bottom: 436px;
+  }
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 43px;
+  }
+  .hero-form-wrap {
+    gap: 40px;
+    justify-content: center;
+    padding: 17px 40px;
+    margin-bottom: 40px;
+  }
+  .hero-form-search::after,
+  .hero-input-wrap::after,
+  .hero-form-start::after {
+    height: 48px;
+  }
+
+  .hero-form-date,
+  .hero-form-choise-list,
+  .hero-form-input::placeholder {
+    font-size: 18px;
+  }
+  .hero-form-end {
+    padding-left: 40px;
+  }
+
+  .hero-form-date::-webkit-calendar-picker-indicator {
+    background-size: 26px 26px;
+  }
+  .hero-btn {
+    padding: 24px 32px;
+    min-width: 232px;
+
+    font-weight: 800;
+    font-size: 18px;
   }
 }
