@@ -222,6 +222,7 @@ a {
     align-items: center;
     justify-content: space-between;
   }
+
   .hero-form-date {
     font-weight: 400;
     font-size: 13px;
@@ -232,6 +233,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @media screen and (max-width: 359px) {
+    .hero-form-date {
+      font-size: 10px;
+    }
   }
   .hero-form-start {
     border-right: 0.5px solid var(--accent-cl);
@@ -528,6 +534,59 @@ a {
     line-height: 0.91;
     color: var(--white-cl);
   }
+
+  /* ------------------------ BENEFITS ------------------------------ */
+
+  .benefits {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .benefits-list {
+  }
+  .benefits-item {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+  @media screen and (max-width: 1239px) {
+    .benefits-item:nth-child(3) {
+      gap: 0;
+    }
+    .benefits-item:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+  .benefits-item:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  .benefits-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0.91;
+
+    margin-bottom: 16px;
+  }
+  .benefits-text {
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 446px;
+  }
+  /* .hidden-text-mob {
+    display: block;
+  } */
+  .open-text {
+    display: none;
+  }
+  /* Пока что такие размеры, пока не подключил picture */
+  .benefits-img {
+    width: 249px;
+    height: 249px;
+  }
+  .benefits-img-lg {
+    width: 292px;
+    height: 196px;
+  }
 }
 
 /* ==============================------------ DESKTOP ----------================================== */
@@ -593,5 +652,33 @@ a {
 
     font-weight: 800;
     font-size: 18px;
+  }
+  /* ------------------------ BENEFITS ------------------------------ */
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .benefits-item {
+    gap: 43px;
+  }
+  .benefits-item:nth-child(2n) {
+    gap: 125px;
+  }
+  .benefits-title {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+  .benefits-text {
+    font-size: 15px;
+    max-width: 505px;
+  }
+  /* Пока что такие размеры, пока не подключил picture */
+  .benefits-img {
+    width: 399px;
+    height: 399px;
+  }
+  .benefits-img-lg {
+    width: 576px;
+    height: 385px;
   }
 }
