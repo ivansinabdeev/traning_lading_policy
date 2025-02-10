@@ -4,6 +4,8 @@
   --white-cl: #ffffff;
   --accent-cl: #5200d9;
   --pink-cl: #f2eaff;
+  --black-cl: #000000;
+  --pink-bg: rgba(82, 0, 217, 0.1);
 }
 
 body {
@@ -319,6 +321,58 @@ a {
   .benefits-img {
     margin: 0 auto;
   }
+
+  /* -------------------------- POLICY ------------------------- */
+
+  .policy {
+    padding: 32px 0;
+  }
+  .container {
+  }
+  .policy-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 0.91;
+    color: var(--txt-cl);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .policy-list {
+  }
+  .policy-item {
+    border-radius: 5px;
+    background-color: var(--pink-bg);
+    padding: 20px 16px 8px;
+    position: relative;
+  }
+  .policy-number {
+    position: absolute;
+    top: -25px;
+    left: 23px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1.5;
+    opacity: 0.1;
+    color: var(--accent-cl);
+  }
+  .policy-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .policy-icon {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+  }
+  .policy-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--black-cl);
+  }
 }
 /* ==================------------ TABLET -----------=================== */
 @media screen and (min-width: 768px) {
@@ -586,6 +640,59 @@ a {
   .benefits-img-lg {
     width: 292px;
     height: 196px;
+  }
+
+  /* -------------------------- POLICY ------------------------- */
+
+  .policy {
+    padding: 32px 0;
+  }
+  .container {
+  }
+  .policy-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 0.91;
+    color: var(--txt-cl);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .policy-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .policy-item {
+    width: 354px;
+    border-radius: 5px;
+    background-color: var(--pink-bg);
+    padding: 24px 12px 20px;
+    position: relative;
+  }
+  .policy-number {
+    position: absolute;
+    top: -25px;
+    left: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1.5;
+    opacity: 0.1;
+    color: var(--accent-cl);
+  }
+  .policy-icon {
+    width: 116px;
+    height: 116px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 29px;
+  }
+  .policy-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--black-cl);
   }
 }
 
