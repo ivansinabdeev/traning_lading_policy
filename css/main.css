@@ -659,8 +659,12 @@ a {
   }
   .policy-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+  }
+  @media screen and (max-width: 1239px) {
+    .policy-list {
+      flex-wrap: wrap;
+    }
   }
   .policy-item {
     width: 354px;
@@ -787,5 +791,17 @@ a {
   .benefits-img-lg {
     width: 576px;
     height: 385px;
+  }
+  /* -------------------------- POLICY ------------------------- */
+
+  .policy-item {
+    width: 295px;
+    height: 295px;
+    padding: 70px 38px 34px;
+  }
+  .policy-number {
+    top: -26px;
+    left: 20px;
+    font-size: 128px;
   }
 }
