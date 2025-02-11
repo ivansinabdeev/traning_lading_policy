@@ -373,6 +373,32 @@ a {
     text-align: center;
     color: var(--black-cl);
   }
+
+  /* --------------------------- LINE ------------------------------ */
+
+  .line {
+    padding: 32px 0;
+    overflow: hidden;
+  }
+  .line-wrap {
+    border-top: 4px solid var(--accent-cl);
+    padding: 24px 0;
+  }
+  .line-wrap:last-child {
+    border-bottom: 4px solid var(--accent-cl);
+  }
+  .line-list {
+    display: flex;
+    gap: 24px;
+  }
+  .line-item {
+  }
+  .line-text {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 0.9;
+    color: var(--txt-cl);
+  }
 }
 /* ==================------------ TABLET -----------=================== */
 @media screen and (min-width: 768px) {
@@ -593,7 +619,7 @@ a {
 
   .benefits {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .benefits-list {
@@ -645,7 +671,7 @@ a {
   /* -------------------------- POLICY ------------------------- */
 
   .policy {
-    padding: 32px 0;
+    padding: 44px 0;
   }
   .container {
   }
@@ -697,6 +723,32 @@ a {
     line-height: 1.5;
     text-align: center;
     color: var(--black-cl);
+  }
+
+  /* --------------------------- LINE ------------------------------ */
+
+  .line {
+    padding: 44px 0;
+    overflow: hidden;
+  }
+  .line-wrap {
+    border-top: 4px solid var(--accent-cl);
+    padding: 24px 0;
+  }
+  .line-wrap:last-child {
+    border-bottom: 4px solid var(--accent-cl);
+  }
+  .line-list {
+    display: flex;
+    gap: 40px;
+  }
+  .line-item {
+  }
+  .line-text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 0.9;
+    color: var(--txt-cl);
   }
 }
 
@@ -766,8 +818,8 @@ a {
   }
   /* ------------------------ BENEFITS ------------------------------ */
   .benefits {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 32px;
+    padding-bottom: 75px;
   }
   .benefits-item {
     gap: 43px;
@@ -794,6 +846,9 @@ a {
   }
   /* -------------------------- POLICY ------------------------- */
 
+  .policy {
+    padding: 75px 0;
+  }
   .policy-item {
     width: 295px;
     height: 295px;
@@ -803,5 +858,19 @@ a {
     top: -26px;
     left: 20px;
     font-size: 128px;
+  }
+  /* --------------------------- LINE ------------------------------ */
+
+  .line {
+    padding: 75px 0;
+  }
+  .line-wrap {
+    padding: 56px 0;
+  }
+  .line-list {
+    gap: 24px;
+  }
+  .line-text {
+    font-size: 64px;
   }
 }
