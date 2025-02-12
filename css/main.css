@@ -399,6 +399,65 @@ a {
     line-height: 0.9;
     color: var(--txt-cl);
   }
+
+  /* -------------------------- REVIEWS ----------------------------------- */
+
+  .reviews {
+    padding-top: 32px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  .container {
+  }
+  .reviews-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 91%;
+    color: var(--txt-cl);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .reviews-list {
+    display: flex;
+    gap: 12px;
+  }
+  .reviews-item {
+    border-radius: 5px;
+    width: 291px;
+    background-color: var(--pink-bg);
+    padding: 20px;
+  }
+  .reviews-stars {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 12px;
+  }
+  .reviews-icons {
+    display: flex;
+    gap: 4px;
+  }
+  .reviews-icon {
+  }
+  .reviews-date,
+  .reviews-name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--txt-cl);
+  }
+  .reviews-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--txt-cl);
+    margin-bottom: 24px;
+  }
+  .reviews-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }
 /* ==================------------ TABLET -----------=================== */
 @media screen and (min-width: 768px) {
@@ -750,6 +809,65 @@ a {
     line-height: 0.9;
     color: var(--txt-cl);
   }
+
+  /* -------------------------- REVIEWS ----------------------------------- */
+
+  .reviews {
+    padding-top: 44px;
+    padding-bottom: 75px;
+    overflow: hidden;
+  }
+  /* .container {
+  } */
+  .reviews-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 0.9;
+    color: var(--txt-cl);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .reviews-list {
+    display: flex;
+    gap: 20px;
+  }
+  .reviews-item {
+    border-radius: 5px;
+    width: 291px;
+    background-color: var(--pink-bg);
+    padding: 20px;
+  }
+  .reviews-stars {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 12px;
+  }
+  .reviews-icons {
+    display: flex;
+    gap: 4px;
+  }
+  .reviews-icon {
+  }
+  .reviews-date,
+  .reviews-name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--txt-cl);
+  }
+  .reviews-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--txt-cl);
+    margin-bottom: 24px;
+  }
+  .reviews-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }
 
 /* ==============================------------ DESKTOP ----------================================== */
@@ -872,5 +990,16 @@ a {
   }
   .line-text {
     font-size: 64px;
+  }
+  /* -------------------------- REVIEWS ----------------------------------- */
+
+  .reviews {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+
+  .reviews-title {
+    font-size: 32px;
+    margin-bottom: 48px;
   }
 }
