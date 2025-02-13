@@ -464,10 +464,9 @@ a {
   .footer {
     padding-top: 25px;
     padding-bottom: 60px;
-    border-top: 2px solid var(--txt-cl);
+    border-top: 1px solid var(--accent-cl);
   }
-  /* .container {
-  } */
+
   .footer-info,
   .footer-products,
   .footer-docs {
@@ -479,8 +478,7 @@ a {
     line-height: 160%;
     color: var(--txt-cl);
   }
-  .footer-link {
-  }
+
   .footer-mob {
     margin-bottom: 24px;
   }
@@ -501,12 +499,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 24px;
-  }
-  .footer-social-item {
-  }
-  .footer-social-link {
-  }
-  .footer-social-icon {
+    max-width: 200px;
   }
 }
 /* ==================------------ TABLET -----------=================== */
@@ -864,7 +857,7 @@ a {
 
   .reviews {
     padding-top: 44px;
-    padding-bottom: 75px;
+    padding-bottom: 150px;
     overflow: hidden;
   }
   /* .container {
@@ -917,6 +910,69 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+
+  /* ------------------------- FOOTER --------------------------- */
+
+  .footer {
+    padding-top: 25px;
+    padding-bottom: 60px;
+    border-top: 1px solid var(--accent-cl);
+  }
+  .footer .container {
+    display: flex;
+    column-gap: 85px;
+    row-gap: 32px;
+  }
+  @media screen and (max-width: 1239px) {
+    .footer .container {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 1239px) {
+    .footer-info .footer-title,
+    .footer-products .footer-title,
+    .footer-docs .footer-title {
+      margin-bottom: 12px;
+    }
+  }
+  @media screen and (max-width: 1239px) {
+    .footer-docs {
+      max-width: 214px;
+    }
+  }
+  .footer-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--txt-cl);
+  }
+  .footer-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--txt-cl);
+  }
+  .footer-mob {
+    display: none;
+  }
+  @media screen and (max-width: 1239px) {
+    .footer-social {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 1239px) {
+    .footer-social .footer-title {
+      margin-right: 16px;
+    }
+  }
+  .footer-social-list {
+    display: flex;
+    gap: 24px;
   }
 }
 
@@ -1051,5 +1107,21 @@ a {
   .reviews-title {
     font-size: 32px;
     margin-bottom: 48px;
+  }
+  /* ------------------------- FOOTER --------------------------- */
+
+  .footer .container {
+    column-gap: 115px;
+  }
+  .footer-title {
+    margin-bottom: 12px;
+  }
+  .footer-social {
+    max-width: 221px;
+  }
+  .footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 31px;
   }
 }
