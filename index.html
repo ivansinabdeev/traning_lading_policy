@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-- Back to top button -->
+    <a id="backToTop"></a>
     <header class="header">
       <div class="container">
         <a class="header-logo" href="./index.html"
@@ -37,11 +39,13 @@
         </button>
         <ul class="header-list">
           <li class="header-item">
-            <a class="header-link" href="">Продукты</a>
+            <a class="header-link" href="#benefits">Продукты</a>
           </li>
-          <li class="header-item"><a class="header-link" href="">Отзывы</a></li>
           <li class="header-item">
-            <a class="header-link" href="">Партнерам</a>
+            <a class="header-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#footer">Партнерам</a>
           </li>
         </ul>
         <button class="header-btn" type="button">
@@ -51,19 +55,30 @@
           Скидки
         </button>
         <div class="mob-menu js-menu-container">
-          <button class="mob-btn-close js-close-menu" type="button">X</button>
+          <button class="mob-btn-close js-close-menu" type="button">
+            <svg width="10" height="10">
+              <use href="./img/icon-close.svg#icon-close-black"></use>
+            </svg>
+          </button>
           <ul class="mob-list">
             <li class="mob-item">
-              <a class="mob-link header-link" href="">Продукты</a>
+              <a class="mob-link mobile-modal-link" href="#benefits"
+                >Продукты</a
+              >
             </li>
             <li class="mob-item">
-              <a class="mob-link header-link" href="">Отзывы</a>
+              <a class="mob-link mobile-modal-link" href="#reviews">Отзывы</a>
             </li>
             <li class="mob-item">
-              <a class="mob-link header-link" href="">Партнерам</a>
+              <a class="mob-link mobile-modal-link" href="#footer">Партнерам</a>
             </li>
           </ul>
-          <button class="mob-btn" type="button">Скидки</button>
+          <button class="mob-btn" type="button">
+            <svg class="header-btn-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-mail"></use>
+            </svg>
+            Скидки
+          </button>
         </div>
       </div>
     </header>
@@ -114,7 +129,7 @@
           </form>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
@@ -302,7 +317,7 @@
           </ul>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="reviews-title">Отзывы</h2>
           <ul class="reviews-list">
@@ -470,7 +485,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-info">
           <p class="footer-title">Информационный центр</p>
@@ -659,6 +674,7 @@
         </div>
       </div>
     </footer>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -666,5 +682,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="./js/mob-menu.js"></script>
+    <script type="module" src="./js/backToTop.js"></script>
   </body>
 </html>
