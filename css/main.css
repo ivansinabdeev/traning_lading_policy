@@ -124,6 +124,13 @@ a {
   visibility: visible;
 }
 
+/* --------------------- SLIDER SWIPER -------------------------------------- */
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 /* ----------================= MOBILE =================--------------- */
 @media screen and (max-width: 767px) {
   /* --------------------- HEADER ---------------------- */
@@ -1043,6 +1050,11 @@ a {
     font-size: 14px;
     line-height: 1.6;
     color: var(--txt-cl);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-link:hover,
+  .footer-link:focus {
+    color: var(--accent-cl);
   }
   .footer-mob {
     display: none;
@@ -1165,6 +1177,10 @@ a {
     width: 295px;
     height: 295px;
     padding: 70px 38px 34px;
+  }
+  .policy-title {
+    font-size: 32px;
+    margin-bottom: 56px;
   }
   .policy-number {
     top: -26px;
