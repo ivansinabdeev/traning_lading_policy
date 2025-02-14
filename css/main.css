@@ -124,12 +124,17 @@ a {
   visibility: visible;
 }
 
-/* --------------------- SLIDER SWIPER -------------------------------------- */
+/* ------------------------ REVIEWS SWIPER SLIDER ----------------- */
 
-.swiper {
-  width: 600px;
-  height: 300px;
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid var(--accent-cl);
 }
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-cl);
+}
+
+/* --------------------- SLIDER SWIPER -------------------------------------- */
 
 /* ----------================= MOBILE =================--------------- */
 @media screen and (max-width: 767px) {
@@ -474,9 +479,17 @@ a {
     padding: 32px 0;
     overflow: hidden;
   }
+
   .line-wrap {
     border-top: 4px solid var(--accent-cl);
     padding: 24px 0;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
   }
   .line-wrap:last-child {
     border-bottom: 4px solid var(--accent-cl);
@@ -484,9 +497,30 @@ a {
   .line-list {
     display: flex;
     gap: 24px;
+
+    display: inline-flex;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 17s linear infinite;
   }
-  .line-item {
+
+  .line-list.second {
+    animation: marquee 18s linear infinite;
   }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .line-list span {
+    display: flex;
+    gap: 24px; /* Расстояние между повторениями */
+  }
+
   .line-text {
     font-weight: 800;
     font-size: 24px;
@@ -499,7 +533,7 @@ a {
   .reviews {
     padding-top: 32px;
     padding-bottom: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .container {
   }
@@ -551,6 +585,26 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+
+  /* ------------------------ REVIEWS SWIPER SLIDER ----------------- */
+  .swiper {
+    width: 347px;
+    height: 260px;
+  }
+
+  .swiper-wrapper {
+    height: 85%;
+  }
+  @media screen and (max-width: 369px) {
+    .swiper {
+      width: 290px;
+      height: 260px;
+    }
+
+    .swiper-wrapper {
+      height: 85%;
+    }
   }
 
   /* ------------------------- FOOTER --------------------------- */
@@ -824,6 +878,7 @@ a {
   .benefits-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 33px;
   }
   @media screen and (max-width: 1239px) {
@@ -931,6 +986,13 @@ a {
   .line-wrap {
     border-top: 4px solid var(--accent-cl);
     padding: 24px 0;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
   }
   .line-wrap:last-child {
     border-bottom: 4px solid var(--accent-cl);
@@ -938,8 +1000,28 @@ a {
   .line-list {
     display: flex;
     gap: 40px;
+
+    display: inline-flex;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 17s linear infinite;
   }
-  .line-item {
+
+  .line-list.second {
+    animation: marquee 18s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .line-list span {
+    display: flex;
+    gap: 24px; /* Расстояние между повторениями */
   }
   .line-text {
     font-weight: 800;
@@ -1005,6 +1087,16 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+
+  /* ------------------------ REVIEWS SWIPER SLIDER ----------------- */
+  .swiper {
+    width: 750px;
+    height: 260px;
+  }
+
+  .swiper-wrapper {
+    height: 85%;
   }
 
   /* ------------------------- FOOTER --------------------------- */
@@ -1198,6 +1290,7 @@ a {
   .line-list {
     gap: 24px;
   }
+
   .line-text {
     font-size: 64px;
   }
@@ -1211,6 +1304,15 @@ a {
   .reviews-title {
     font-size: 32px;
     margin-bottom: 48px;
+  }
+  /* ------------------------ REVIEWS SWIPER SLIDER ----------------- */
+  .swiper {
+    width: 1220px;
+    height: 260px;
+  }
+
+  .swiper-wrapper {
+    height: 85%;
   }
   /* ------------------------- FOOTER --------------------------- */
 

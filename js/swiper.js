@@ -7,13 +7,13 @@ let swiper = new Swiper(".swiper", {
     },
     // when window width is >= 640px
     370: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
     },
     768: {
-      slidesPerView: 2.33,
+      slidesPerView: 2.6,
     },
-    1280: {
-      slidesPerView: 2.33,
+    1240: {
+      slidesPerView: 4.2,
     },
   },
   autoplay: {
